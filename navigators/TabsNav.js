@@ -11,7 +11,11 @@ export default function TabsNav() {
   const { data } = useMe();
   return (
     <Tabs.Navigator
-      screenOptions={{ headerShown: false, tabBarShowLabel: false }}
+      screenOptions={{
+        headerShown: false,
+        tabBarShowLabel: false,
+        tabBarStyle: { backgroundColor: "black" },
+      }}
     >
       <Tabs.Screen
         name="Feed"

@@ -5,6 +5,7 @@ import TabsNav from "./TabsNav";
 import useMe from "../hooks/useMe";
 import UploadNav from "./UploadNav";
 import UploadForm from "../screens/UploadForm";
+import MessagesNav from "./MessageNavigator";
 
 const Stack = createStackNavigator();
 
@@ -36,6 +37,11 @@ export default function LoggedInNav() {
           },
         }}
         component={UploadForm}
+      />
+      <Stack.Screen
+        name="Messages"
+        options={{ headerShown: false }}
+        component={MessagesNav}
       />
     </Stack.Navigator>
   );
