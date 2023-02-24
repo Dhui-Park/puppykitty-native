@@ -54,9 +54,9 @@ export default function RoomItem({ users, unreadTotal, id }) {
   return (
     <RoomContainer onPress={goToRoom}>
       <Column>
-        <Avatar source={{ uri: talkingTo.avatar }} />
+        <Avatar source={{ uri: talkingTo?.avatar }} />
         <Data>
-          <Username>{talkingTo.username}</Username>
+          <Username>{talkingTo?.username}</Username>
           <UnreadText>
             {unreadTotal} unread {unreadTotal === 1 ? "message" : "messages"}
           </UnreadText>
