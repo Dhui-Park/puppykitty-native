@@ -5,7 +5,7 @@ import TabsNav from "./TabsNav";
 import useMe from "../hooks/useMe";
 import UploadNav from "./UploadNav";
 import UploadForm from "../screens/UploadForm";
-import MessagesNav from "./MessageNavigator";
+import MessagesNav from "./MessageNav";
 
 const Stack = createStackNavigator();
 
