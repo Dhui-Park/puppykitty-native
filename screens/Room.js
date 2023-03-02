@@ -169,6 +169,12 @@ export default function Room({ route, navigation }) {
         id: `Room:${route.params.id}`,
         fields: {
           messages(prev) {
+            const existingMessage = prev.find(
+              (aMessage) => aMessage.__ref === messageFragment.__ref
+            );
+            if (existingMessage) {
+              return prev;
+            }
             return [...prev, messageFragment];
           },
         },
